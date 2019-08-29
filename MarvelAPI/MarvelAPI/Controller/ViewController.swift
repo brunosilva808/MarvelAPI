@@ -12,7 +12,22 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        getCharacters()
+    }
+    
+    func getCharacters() {
+        let apiClient = MarvelAPIClient(/* some config */)
+        
+        apiClient.send(Request.GetCharacters()) { response in
+            print("GetCharacters finished:")
+            
+            response.map { characters in
+                for character in characters {
+                    print("Name: \(character.name ?? "Unnamed character")")
+                }
+            }
+        }
     }
 
 
