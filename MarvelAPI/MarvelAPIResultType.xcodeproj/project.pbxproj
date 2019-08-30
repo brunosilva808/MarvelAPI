@@ -18,6 +18,10 @@
 		468601CD2316EDFE00DAED22 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468601CC2316EDFE00DAED22 /* Image.swift */; };
 		468601D12316EF7500DAED22 /* MarvelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468601D02316EF7500DAED22 /* MarvelError.swift */; };
 		468601D3231825AE00DAED22 /* MarvelAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468601D2231825AE00DAED22 /* MarvelAPIClient.swift */; };
+		468601D52318270100DAED22 /* MarvelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468601D42318270100DAED22 /* MarvelResponse.swift */; };
+		468601D82318339700DAED22 /* URLQueryItemEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468601D72318339700DAED22 /* URLQueryItemEncoder.swift */; };
+		468601DA231833D000DAED22 /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468601D9231833D000DAED22 /* HTTPParameter.swift */; };
+		468601DC23184A9400DAED22 /* md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468601DB23184A9400DAED22 /* md5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		468601A02316DB6400DAED22 /* MarvelAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		468601A02316DB6400DAED22 /* MarvelAPIResultType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAPIResultType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468601A32316DB6400DAED22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		468601A52316DB6400DAED22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		468601AA2316DB6500DAED22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		468601AD2316DB6500DAED22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		468601AF2316DB6500DAED22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		468601B42316DB6500DAED22 /* MarvelAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		468601B42316DB6500DAED22 /* MarvelAPIResultTypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAPIResultTypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		468601B82316DB6500DAED22 /* MarvelAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPITests.swift; sourceTree = "<group>"; };
 		468601BA2316DB6500DAED22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		468601C52316DEE100DAED22 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
@@ -46,6 +50,10 @@
 		468601CC2316EDFE00DAED22 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		468601D02316EF7500DAED22 /* MarvelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelError.swift; sourceTree = "<group>"; };
 		468601D2231825AE00DAED22 /* MarvelAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIClient.swift; sourceTree = "<group>"; };
+		468601D42318270100DAED22 /* MarvelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelResponse.swift; sourceTree = "<group>"; };
+		468601D72318339700DAED22 /* URLQueryItemEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryItemEncoder.swift; sourceTree = "<group>"; };
+		468601D9231833D000DAED22 /* HTTPParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
+		468601DB23184A9400DAED22 /* md5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = md5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +86,8 @@
 		468601A12316DB6400DAED22 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				468601A02316DB6400DAED22 /* MarvelAPI.app */,
-				468601B42316DB6500DAED22 /* MarvelAPITests.xctest */,
+				468601A02316DB6400DAED22 /* MarvelAPIResultType.app */,
+				468601B42316DB6500DAED22 /* MarvelAPIResultTypeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,8 +98,8 @@
 				468601A32316DB6400DAED22 /* AppDelegate.swift */,
 				468601C92316E95200DAED22 /* Model */,
 				468601C32316DBBE00DAED22 /* Controller */,
-				468601C42316DBC600DAED22 /* Resources */,
 				468601CE2316EF4700DAED22 /* Network */,
+				468601C42316DBC600DAED22 /* Resources */,
 			);
 			path = MarvelAPI;
 			sourceTree = "<group>";
@@ -135,10 +143,12 @@
 		468601CE2316EF4700DAED22 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				468601C52316DEE100DAED22 /* APIRequest.swift */,
-				468601D02316EF7500DAED22 /* MarvelError.swift */,
-				468601D2231825AE00DAED22 /* MarvelAPIClient.swift */,
 				468601CF2316EF4F00DAED22 /* Request */,
+				468601D62318336200DAED22 /* Utils */,
+				468601C52316DEE100DAED22 /* APIRequest.swift */,
+				468601D2231825AE00DAED22 /* MarvelAPIClient.swift */,
+				468601D02316EF7500DAED22 /* MarvelError.swift */,
+				468601D42318270100DAED22 /* MarvelResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -151,12 +161,22 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		468601D62318336200DAED22 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				468601D72318339700DAED22 /* URLQueryItemEncoder.swift */,
+				468601D9231833D000DAED22 /* HTTPParameter.swift */,
+				468601DB23184A9400DAED22 /* md5.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4686019F2316DB6400DAED22 /* MarvelAPI */ = {
+		4686019F2316DB6400DAED22 /* MarvelAPIResultType */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 468601BD2316DB6500DAED22 /* Build configuration list for PBXNativeTarget "MarvelAPI" */;
+			buildConfigurationList = 468601BD2316DB6500DAED22 /* Build configuration list for PBXNativeTarget "MarvelAPIResultType" */;
 			buildPhases = (
 				4686019C2316DB6400DAED22 /* Sources */,
 				4686019D2316DB6400DAED22 /* Frameworks */,
@@ -166,14 +186,14 @@
 			);
 			dependencies = (
 			);
-			name = MarvelAPI;
+			name = MarvelAPIResultType;
 			productName = MarvelAPI;
-			productReference = 468601A02316DB6400DAED22 /* MarvelAPI.app */;
+			productReference = 468601A02316DB6400DAED22 /* MarvelAPIResultType.app */;
 			productType = "com.apple.product-type.application";
 		};
-		468601B32316DB6500DAED22 /* MarvelAPITests */ = {
+		468601B32316DB6500DAED22 /* MarvelAPIResultTypeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 468601C02316DB6500DAED22 /* Build configuration list for PBXNativeTarget "MarvelAPITests" */;
+			buildConfigurationList = 468601C02316DB6500DAED22 /* Build configuration list for PBXNativeTarget "MarvelAPIResultTypeTests" */;
 			buildPhases = (
 				468601B02316DB6500DAED22 /* Sources */,
 				468601B12316DB6500DAED22 /* Frameworks */,
@@ -184,9 +204,9 @@
 			dependencies = (
 				468601B62316DB6500DAED22 /* PBXTargetDependency */,
 			);
-			name = MarvelAPITests;
+			name = MarvelAPIResultTypeTests;
 			productName = MarvelAPITests;
-			productReference = 468601B42316DB6500DAED22 /* MarvelAPITests.xctest */;
+			productReference = 468601B42316DB6500DAED22 /* MarvelAPIResultTypeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4686019B2316DB6400DAED22 /* Build configuration list for PBXProject "MarvelAPI" */;
+			buildConfigurationList = 4686019B2316DB6400DAED22 /* Build configuration list for PBXProject "MarvelAPIResultType" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4686019F2316DB6400DAED22 /* MarvelAPI */,
-				468601B32316DB6500DAED22 /* MarvelAPITests */,
+				4686019F2316DB6400DAED22 /* MarvelAPIResultType */,
+				468601B32316DB6500DAED22 /* MarvelAPIResultTypeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,11 +273,15 @@
 			files = (
 				468601D3231825AE00DAED22 /* MarvelAPIClient.swift in Sources */,
 				468601A62316DB6400DAED22 /* ViewController.swift in Sources */,
+				468601DA231833D000DAED22 /* HTTPParameter.swift in Sources */,
 				468601CD2316EDFE00DAED22 /* Image.swift in Sources */,
 				468601A42316DB6400DAED22 /* AppDelegate.swift in Sources */,
 				468601C82316E94E00DAED22 /* GetCharacters.swift in Sources */,
+				468601DC23184A9400DAED22 /* md5.swift in Sources */,
 				468601C62316DEE100DAED22 /* APIRequest.swift in Sources */,
 				468601CB2316E98400DAED22 /* ComicCharacters.swift in Sources */,
+				468601D52318270100DAED22 /* MarvelResponse.swift in Sources */,
+				468601D82318339700DAED22 /* URLQueryItemEncoder.swift in Sources */,
 				468601D12316EF7500DAED22 /* MarvelError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +299,7 @@
 /* Begin PBXTargetDependency section */
 		468601B62316DB6500DAED22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4686019F2316DB6400DAED22 /* MarvelAPI */;
+			target = 4686019F2316DB6400DAED22 /* MarvelAPIResultType */;
 			targetProxy = 468601B52316DB6500DAED22 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -461,7 +485,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelAPI.app/MarvelAPI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelAPIResultType.app/MarvelAPIResultType";
 			};
 			name = Debug;
 		};
@@ -482,14 +506,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelAPI.app/MarvelAPI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelAPIResultType.app/MarvelAPIResultType";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4686019B2316DB6400DAED22 /* Build configuration list for PBXProject "MarvelAPI" */ = {
+		4686019B2316DB6400DAED22 /* Build configuration list for PBXProject "MarvelAPIResultType" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				468601BB2316DB6500DAED22 /* Debug */,
@@ -498,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		468601BD2316DB6500DAED22 /* Build configuration list for PBXNativeTarget "MarvelAPI" */ = {
+		468601BD2316DB6500DAED22 /* Build configuration list for PBXNativeTarget "MarvelAPIResultType" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				468601BE2316DB6500DAED22 /* Debug */,
@@ -507,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		468601C02316DB6500DAED22 /* Build configuration list for PBXNativeTarget "MarvelAPITests" */ = {
+		468601C02316DB6500DAED22 /* Build configuration list for PBXNativeTarget "MarvelAPIResultTypeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				468601C12316DB6500DAED22 /* Debug */,

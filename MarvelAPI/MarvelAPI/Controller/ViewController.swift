@@ -17,17 +17,20 @@ class ViewController: UITableViewController {
     }
     
     func getCharacters() {
-        let apiClient = MarvelAPIClient(/* some config */)
+        let apiClient = MarvelAPIClient(privateKey: "a1b0fc8354dee2423349c6d1453dbc91a7716bc6", publicKey: "2b78d362481839c76e3df81e3b13d6e5")
         
+        // A simple request with no parameters
         apiClient.send(Request.GetCharacters()) { response in
-            print("GetCharacters finished:")
+            print("\nGetCharacters finished:")
             
-            response.map { characters in
-                for character in characters {
-                    print("Name: \(character.name ?? "Unnamed character")")
+            response.map { dataContainer in
+                for character in dataContainer.results {
+                    print("  Title: \(character.name ?? "Unnamed character")")
+                    print("  Thumbnail: \(character.thumbnail?.url.absoluteString ?? "None")")
                 }
             }
         }
+        
     }
 
 

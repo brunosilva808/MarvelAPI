@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MarvelAPI.xcodeproj">
+      location = "self:/Users/bruno.silva/Projects/iOS/MarvelAPI/MarvelAPI/MarvelAPIResultType.xcodeproj">
    </FileRef>
 </Workspace>

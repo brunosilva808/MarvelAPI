@@ -10,4 +10,6 @@ import UIKit
 
 enum MarvelError: Error {
     case decoding
+    case encoding
+    case server(message: String, statusCode: String)
 }
